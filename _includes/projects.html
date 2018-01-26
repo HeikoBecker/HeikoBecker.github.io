@@ -1,0 +1,11 @@
+  <h3>
+    Projects
+  </h3>
+  {% for project in site.data.projects %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title"> {{project.title}} </span>
+      {{project.description }}
+    </div>
+  </div>
+  {% endfor %}
