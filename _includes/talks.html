@@ -1,0 +1,15 @@
+  <h3>
+    Talks
+  </h3>
+  <p>
+    <ul>
+      {% for talk in site.data.talks %}
+      <li>
+        {% if talk.link %}
+        <a href="{{talk.link}}">
+          {{ talk.title }}
+        </a>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </p>

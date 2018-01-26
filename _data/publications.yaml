@@ -1,0 +1,16 @@
+- authors: Heiko Becker, Eva Darulova and Magnus O. Myreen
+  title: A Verified Certificate Checker for Floating-Point Error Bounds
+  conference: ArXiv e-print
+  year: 2017
+  link: https://arxiv.org/abs/1707.02115
+  abstract: Being able to soundly estimate roundoff errors in floating-point computations is important for many applications in embedded systems and scientific computing. Due to the unintuitive nature of floating-point arithmetic, automated static analysis tools are highly valuable for this task.
+
+- title: A Transfinite Knuth-Bendix Order for Lambda-Free Higher-Order Terms
+  authors: Heiko Becker, Jasmin Christian Blanchette,Uwe Waldmann and Daniel Wand
+  conference: CADE-26. LNCS, Springer
+  year: 2017
+
+- title: Comparing Repositories Visually with RepoGrams
+  authors: Daniel Rozenberg, Ivan Beschastnikh, Fabian Kosmale, Valerie Poser, Heiko Becker, Marc Palyart, Gail C. Murphy
+  conference: Proceedings of the 13th International Conference on Mining Software Repositories
+  year: 2016

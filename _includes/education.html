@@ -1,0 +1,15 @@
+  <h3>
+    Education
+  </h3>
+  <p>
+      {% for education in site.data.education %}
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title"> {{education.start}} - {{education.end}}</span>
+        <p>
+          {{education.what}}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </p>
