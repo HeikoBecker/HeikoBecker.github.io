@@ -1,2 +1,2 @@
 - title: FloVer
-  description:  A verified certificate checker for Floating-Point roundoff errors developed during my Master Thesis.
+  description:  A verified certificate checker for floating-point roundoff errors.
