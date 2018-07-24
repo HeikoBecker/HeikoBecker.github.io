@@ -7,14 +7,8 @@
 - authors: Heiko Becker, Pavel Pancheckha, Eva Darulova, and Zachary Tatlock
   title: Combining Tools for Optimization and Analysis of Floating-Point Computations
   year: 2018
-  conference: International Symposium on Formal Methods (FM)
-  abstract: Recent renewed interest in optimizing and analyzing floating-point programs has lead to a diverse array of new tools for numerical programs. These tools are often complementary, each focusing on a distinct aspect of numerical programming. Building reliable floating point applications typically requires addressing several of these aspects, which makes easy composition essential. This paper describes the composition of two recent floating-point tools; Herbie, which performs accuracy optimization, and Daisy, which performs accuracy verification. We find that the combination provides numerous benefits to users, such as being able to use Daisy to check whether Herbie's unsound optimizations improved the worst-case roundoff error, as well as benefits to tool authors, including uncovering a number of bugs in both tools. The combination also allowed us to compare the different program rewriting techniques implemented by these tools for the first time. The paper lays out a road map for combining other floating-point tools and for surmounting common challenges.
-
-- authors: Heiko Becker, Pavel Pancheckha, Eva Darulova, and Zachary Tatlock
-  title: Combining Tools for Optimization and Analysis of Floating-Point Computations (Technical Report)
-  year: 2018
   link: https://arxiv.org/pdf/1805.02436
-  conference: arXiv preprint
+  conference: International Symposium on Formal Methods (FM)
   abstract: Recent renewed interest in optimizing and analyzing floating-point programs has lead to a diverse array of new tools for numerical programs. These tools are often complementary, each focusing on a distinct aspect of numerical programming. Building reliable floating point applications typically requires addressing several of these aspects, which makes easy composition essential. This paper describes the composition of two recent floating-point tools; Herbie, which performs accuracy optimization, and Daisy, which performs accuracy verification. We find that the combination provides numerous benefits to users, such as being able to use Daisy to check whether Herbie's unsound optimizations improved the worst-case roundoff error, as well as benefits to tool authors, including uncovering a number of bugs in both tools. The combination also allowed us to compare the different program rewriting techniques implemented by these tools for the first time. The paper lays out a road map for combining other floating-point tools and for surmounting common challenges.
 
 - authors: Eva Darulova, Anastasiia Izycheva, Fariha Nasir, Fabian Ritter, Heiko Becker, and Robert Bastian
