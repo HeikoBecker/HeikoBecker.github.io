@@ -4,8 +4,16 @@
   {% for project in site.data.projects %}
   <div class="card">
     <div class="card-content">
-      <span class="card-title"> {{project.title}} </span>
-      {{project.description }}
+      <span class="card-title">
+        {% if project.link %}
+        <a href="{{ project.link }}">
+        {% endif %}
+          {{project.title}}
+        {% if project.link %}
+        </a>
+        {% endif %}
+      </span>
+      {{ project.description }}
     </div>
   </div>
   {% endfor %}

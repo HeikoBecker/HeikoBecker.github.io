@@ -1,2 +1,4 @@
 - title: FloVer
-  description:  A verified certificate checker for floating-point roundoff errors.
+  link: https://gitlab.mpi-sws.org/AVA/FloVer
+  description: A verified certificate checker for finite-precision roundoff errors.
+               FloVer is implemented in both Coq and HOL4 and the implementations can be found at <a href="https://gitlab.mpi-sws.org/AVA/FloVer"> our GitLab server </a>.

@@ -18,12 +18,19 @@
           <br>
           <i>{{publication.conference}}</i>; {{publication.year}}
           {% if publication.abstract %}
-          <span class="activator right"> Show abstract </span>
+          <span class="right">
+            <a class="waves-effect waves-light btn">
+              <span class="activator">
+                Show abstract
+              </span>
+            </a>
+          </span>
           {% endif %}
       </div>
       {% if publication.abstract %}
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
+        <span class="card-title grey-text text-darken-4">Abstract
+          <i class="material-icons right">close</i></span>
         <p>
           {{publication.abstract}}
         </p>

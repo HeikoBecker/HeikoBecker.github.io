@@ -1,7 +1,8 @@
 - authors: Heiko Becker, Nikita Zyuzin, Raphael Monat, Eva Darulova, Magnus O. Myreen, and Anthony Fox
-  title: A Verified Certificate Checker for Floating-Point Error Bounds (under publication)
+  title: A Verified Certificate Checker for Floating-Point Error Bounds
   conference: Formal Methods in Computer-Aided Design (FMCAD)
   year: 2018
+  link: https://arxiv.org/abs/1707.02115
   abstract: Being able to soundly estimate roundoff errors in finite-precision computations is important for many applications in embedded systems and scientific computing. Due to the unintuitive nature of finite-precision arithmetic, automated static analysis tools are highly valuable for this task. The results, however, are only as correct as the implementations of the static analysis tools. This paper presents a formally verified and modular tool which fully automatically checks the correctness of finite-precision roundoff error bounds encoded in a certificate. We present implementations of certificate generation and checking for both Coq and HOL4 and evaluate it on a number of examples from the literature. The experiments use both in-logic evaluation of Coq and HOL4, and execution of extracted code outside of the logics. We benchmark Coq extracted unverified OCaml code and a CakeML-generated verified binary.
 
 - authors: Heiko Becker, Pavel Pancheckha, Eva Darulova, and Zachary Tatlock
@@ -16,13 +17,6 @@
   year: 2018
   conference: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)
   link: https://people.mpi-sws.org/~eva/papers/tacas18_daisy_toolpaper.pdf
-
-- authors: Heiko Becker, Eva Darulova and Magnus O. Myreen
-  title: A Verified Certificate Checker for Floating-Point Error Bounds
-  conference: ArXiv e-print
-  year: 2017
-  link: https://arxiv.org/abs/1707.02115
-  abstract: Being able to soundly estimate roundoff errors in floating-point computations is important for many applications in embedded systems and scientific computing. Due to the unintuitive nature of floating-point arithmetic, automated static analysis tools are highly valuable for this task.
 
 - title: A Transfinite Knuth-Bendix Order for Lambda-Free Higher-Order Terms
   authors: Heiko Becker, Jasmin Christian Blanchette,Uwe Waldmann and Daniel Wand
