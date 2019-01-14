@@ -1,3 +1,10 @@
+- start: September 2018
+  what: Co-advising <a href="https://people.mpi-sws.org/~jbard/">Joachim Bard</a> during his Masters at MPI-SWS.
+
+- start: March 2018
+  end: November 2018
+  what: Co-advised <a href="http://software.imdea.org/people/nikita.zyuzin/index.html">Nikita Zyuzin</a> during his Masters at MPI-SWS. The goal of the master thesis was to extend FloVer with a formalization of affine arithmetic and implement new certificate checking functions that use affine arithmetic to compute tighter bounds.
+
 - start: January 2017
   end: June 2017
   what: Co-advised <a target="_BLANK" href="http://rmonat.fr/">Raphael Monat</a> during his internship at MPI-SWS. The goal of the internship was to extend FloVer with support for mixed-precision verification.

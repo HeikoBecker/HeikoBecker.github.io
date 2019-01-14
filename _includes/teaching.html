@@ -6,6 +6,9 @@
     <div class="card">
       <div class="card-content">
         <span class="card-title">
+          {% unless teach.end %}
+          Since
+          {% endunless %}
           {{teach.start}}
           {% if teach.end %}
           - {{teach.end}}
