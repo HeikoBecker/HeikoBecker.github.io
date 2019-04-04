@@ -1,5 +1,5 @@
 - authors: Heiko Becker, Nikita Zyuzin, Raphael Monat, Eva Darulova, Magnus O. Myreen, and Anthony Fox
-  title: A Verified Certificate Checker for Floating-Point Error Bounds
+  title: A Verified Certificate Checker for Finite-Precision Error Bounds
   conference: Formal Methods in Computer-Aided Design (FMCAD)
   year: 2018
   link: https://arxiv.org/abs/1707.02115
