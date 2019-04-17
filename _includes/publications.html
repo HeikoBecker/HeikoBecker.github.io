@@ -14,18 +14,23 @@
           <b> {{ publication.title }} </b>
           {% endif %}
         </span>
-          {{publication.authors}};
-          <br>
-          <i>{{publication.conference}}</i>; {{publication.year}}
-          {% if publication.abstract %}
-          <span class="right">
-            <a class="waves-effect waves-light btn">
-              <span class="activator">
-                Show abstract
-              </span>
-            </a>
-          </span>
+        {{publication.authors}};
+        <br>
+        <i>{{publication.conference}}</i>; {{publication.year}}
+        <span class="right">
+          {% if publication.slides %}
+          <a class="waves-effect waves-light btn" href="{{ publication.slides }}">
+            Slides
+          </a>
           {% endif %}
+          {% if publication.abstract %}
+          <a class="waves-effect waves-light btn">
+            <span class="activator">
+              Show abstract
+            </span>
+          </a>
+          {% endif %}
+        </span>
       </div>
       {% if publication.abstract %}
       <div class="card-reveal">
