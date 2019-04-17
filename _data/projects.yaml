@@ -1,3 +1,8 @@
+- title: Icing
+  link: https://gitlab.mpi-sws.org/AVA/Icing
+  description: A new, nondeterministic floating-point source semantics and a proof-of-concept connection to the CakeML verified compiler.
+
+
 - title: FloVer
   link: https://gitlab.mpi-sws.org/AVA/FloVer
   description: A verified certificate checker for finite-precision roundoff errors.
