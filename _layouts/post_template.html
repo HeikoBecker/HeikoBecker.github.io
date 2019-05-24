@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+  {% include head_post.html %}
+
+  <body class="grey lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <div class="card card-panel">
+          <h1>
+            {{ page.title | escape }}
+          </h1>
+          <p>
+            {{ page.content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
