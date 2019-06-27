@@ -1,3 +1,15 @@
+- authors: Joachim Bard, Heiko Becker, and Eva Darulova
+  title: Formally Verified Roundoff Errors using SMT-based Certificates and Subdivisions (Tool Paper), under publication
+  conference: International Symposium on Formal Methods (FM)
+  year: 2019
+  abstract: When compared to idealized, real-valued arithmetic, finite precision arithmetic introduces unavoidable errors, for which numerous tools compute sound upper bounds. To ensure soundness, providing formal guarantees on these complex tools is highly valuable. In this paper we extend one such formally verified tool, FloVer. First, we extend FloVer with an SMT-based domain using results from an external SMT solver as an oracle. Second, we implement interval subdivision on top of the existing analyses. Our evaluation shows that these extensions allow FloVer to efficiently certify more precise bounds for nonlinear expressions.
+
+- authors: Heiko Becker, Eva Darulova, Magnus O. Myreen, and Zachary Tatlock
+  title: Icing - Supporting Fast-math Style Optimizations in a Verified Compiler
+  conference: International Conference on Computer-Aided Verification (CAV)
+  year: 2019
+  abstract: Verified compilers like CompCert and CakeML offer increasingly sophisticated optimizations. However, their deterministic source semantics and strict IEEE 754 compliance prevent the verification of "fast-math" style floating-point optimizations. Developers often selectively use these optimizations in mainstream compilers like GCC and LLVM to improve the performance of computations over noisy inputs or for heuristics by allowing the compiler to perform intuitive but IEEE 754-unsound rewrites. We designed, formalized, implemented, and verified a compiler for Icing, a new language which supports selectively applying fast-math style optimizations in a verified compiler. Icing's semantics provides the first formalization of fast-math in a verified compiler. We show how the Icing compiler can be connected to the existing verified CakeML compiler and verify the end-to-end translation by a sequence of refinement proofs from Icing to the translated CakeML. We evaluated Icing by incorporating several of GCC's fast-math rewrites. While Icing targets CakeML's source language, the techniques we developed are general and could also be incorporated in lower-level intermediate representations.
+
 - authors: Heiko Becker, Nikita Zyuzin, Raphael Monat, Eva Darulova, Magnus O. Myreen, and Anthony Fox
   title: A Verified Certificate Checker for Finite-Precision Error Bounds
   conference: Formal Methods in Computer-Aided Design (FMCAD)
