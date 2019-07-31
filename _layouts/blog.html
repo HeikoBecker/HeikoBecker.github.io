@@ -1,3 +1,9 @@
+---
+reachable:
+  - url: ""
+    name: <i class="fas fa-home fa-2x"></i>
+---
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
@@ -5,17 +11,36 @@
 
   <body class="grey lighten-3">
     <div class="row">
-
-      {% include sidebar.html %}
-
+      <div class="col l3 m12 s12">
+        {% include sidebar.html %}
+      </div>
       <div class="col l8 s12">
-        <ul>
+        <div class="row">
+          <div class="col offset-s1 s2">
+            <h4>
+              <a href="{{site.baseurl}}/" class="blue-text text-darken-2">Home</a>
+            </h4>
+          </div>
+          <div class="col s2">
+            <h4>
+              <a href="{{site.baseurl}}/blog" class="blue-text text-darken-2">Blog</a>
+            </h4>
+          </div>
+        </div>
+      <div class="divider">
+      </div>
+      <div>
+        <ul class="collection">
           {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+          <li class="collection-item">
+            <a href="{{site.baseurl}}{{ post.url }}"><h4>{{ post.title }}</h4></a> {{ post.date | date: "%d. %B %Y"}}
+            <p>
+              {{ post.excerpt }}
+            </p>
           </li>
           {% endfor %}
         </ul>
+      </div>
       </div>
     </div>
     {% include footer.html %}

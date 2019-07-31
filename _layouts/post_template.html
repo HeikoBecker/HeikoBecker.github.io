@@ -1,3 +1,11 @@
+---
+reachable:
+  - url: ""
+    name: <i class="fas fa-home fa-2x"></i>
+  - url: blog
+    name: <i class="far fa-file-alt fa-2x"></i>
+---
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
@@ -5,15 +13,27 @@
 
   <body class="grey lighten-3">
     <div class="row">
-
-      {% include sidebar.html %}
-
+      <div class="col l3 m12 s12">
+        {% include sidebar.html %}
+      </div>
       <div class="col l8 s12">
+        <div class="row">
+          <div class="col offset-s1 s2">
+            <h4>
+              <a href="{{site.baseurl}}/" class="blue-text text-darken-2">Home</a>
+            </h4>
+          </div>
+          <div class="col s2">
+            <h4>
+              <a href="{{site.baseurl}}/blog" class="blue-text text-darken-2">Blog</a>
+            </h4>
+          </div>
+        </div>
         <div class="card card-panel">
-          <h1>
+          <h3>
             {{ page.title | escape }}
-          </h1>
-          <div class="flow-text">
+          </h3>
+          <div class="">
             {{ page.content }}
           </div>
         </div>

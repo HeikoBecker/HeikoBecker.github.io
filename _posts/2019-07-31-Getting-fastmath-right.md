@@ -1,14 +1,14 @@
 ---
 layout: post_template
 title: "Getting Fastmath Optimizations Right"
----
-
+excerpt_separator: <!--more-->
 ---
 
 When using gcc or clang, programmers commonly use so-called "fastmath"
 optimizations to aggressively optimize floating-point programs.
 So far, these optimizations have been out of reach for verified compilers
 like [CompCert](https://compcert.inria.fr) or [CakeML](https://cakeml.org).
+<!--more-->
 
 In our paper recent [CAV paper](https://i-cav.org/2019), we introduce a new
 semantics for floating-point programs in verified compilers, called *Icing*[^1].
@@ -25,7 +25,7 @@ However, it took us many iterations to arrive at its current design and in this
 blog post I want to shed some light on the different implementations and
 approaches we tried (and in the end abandoned).
 
-## Interfacing between semantics and optimizations
+### Interfacing between semantics and optimizations
 
 Icing has a single nondeterministic semantics of the form
 $$(cfg, E, e) \Downarrow v$$ meaning that expression $$e$$ evaluates to value
@@ -33,7 +33,7 @@ $$v$$ under the environment $$E$$ with optimizations from $$cfg$$.
 Any proof for Icing is always done with respect to this nondeterministic
 semantics.
 
-In contrast, our initial supiciion was that separating the nondeterminism from
+In contrast, our initial suspicion was that separating the nondeterminism from
 the proof interface would simplify reasoning.
 Thus we designed two separate semantics for Icing:
 The first one would nondeterministically apply optimizations as the current,
@@ -64,7 +64,7 @@ would return the (infinite) set of all possible optimization results.
 We found this semantics not easy to maintain and read in comparison to the
 relational semantics we settled on in the end.
 
-## Smartly representations for lazy values
+### Smart representations for lazy values
 
 To make it possible for the semantics to the same optimizations as the compiler
 we must delay evaluation of expressions.
@@ -139,4 +139,4 @@ project:
       As our semantics operates on the top-level and is supposed to make
       floating-point support of CakeML better, we called Icing.
 
-[^2]: TODO: Fun Big-step paper
+[^2]: Functional Big-step Semantics; Owens et al.; ESOP'16 (see [https://cakeml.org/esop16.pdf]())
