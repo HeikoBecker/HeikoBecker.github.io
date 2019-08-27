@@ -10,7 +10,7 @@ So far, these optimizations have been out of reach for verified compilers
 like [CompCert](https://compcert.inria.fr) or [CakeML](https://cakeml.org).
 <!--more-->
 
-In our paper recent [CAV paper](http://i-cav.org/2019), we introduce a new
+In our recent [CAV paper](http://i-cav.org/2019), we introduce a new
 semantics for floating-point programs in verified compilers, called *Icing*[^1].
 Icing semantics have three key ideas:
 
