@@ -1,9 +1,4 @@
 ---
-reachable:
-  - url: ""
-    name: <i class="fas fa-home fa-2x"></i>
-  - url: blog
-    name: <i class="far fa-file-alt fa-2x"></i>
 ---
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -11,12 +6,9 @@ reachable:
 
   {% include head.html %}
 
-  <body class="grey lighten-3">
+  <body class="grey lighten-3 container">
     <div class="row">
-      <div class="col l3 m12 s12">
-        {% include sidebar.html %}
-      </div>
-      <div class="col l8 s12">
+      <div class="col l12 s12">
         <div class="row">
           <div class="col offset-s1 s2">
             <h4>
@@ -33,7 +25,7 @@ reachable:
           <h1>
             {{ page.title | escape }}
           </h1>
-          <div class="text">
+          <div class="text flow-text">
             {{ page.content }}
           </div>
         </div>
