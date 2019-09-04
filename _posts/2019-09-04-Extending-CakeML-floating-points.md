@@ -24,9 +24,8 @@ syntax for two reasons:
 
 For an unverified compiler, the changes sketched above would have been
 relatively easy.
-As CakeML is a fully verified compiler fixing these two points required then
-what would have been necessary for an unverified compiler.
-little more work than what would have been necessary for an unverified compiler.
+As CakeML is a fully verified compiler fixing these two points required more
+work then what would have been necessary for an unverified compiler.
 
 In this post I will first give a brief intro to compiler verification and the
 verified CakeML compiler.
