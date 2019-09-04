@@ -24,7 +24,8 @@ syntax for two reasons:
 
 For an unverified compiler, the changes sketched above would have been
 relatively easy.
-As CakeML is a fully verified compiler fixing these two points required  than what would have been necessary for an unverified compiler.
+As CakeML is a fully verified compiler fixing these two points required then
+what would have been necessary for an unverified compiler.
 little more work than what would have been necessary for an unverified compiler.
 
 In this post I will first give a brief intro to compiler verification and the
@@ -128,7 +129,7 @@ my extension was a nice exercise and well worth doing from a personal
 point of view.
 If you are now curious yourself on hacking on CakeML, I recommend looking at
 the list of [starter issues](https://github.com/CakeML/cakeml/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-and getting in touch with the developers (and/or me) on the [CakeML slack](https://cakeml.slack.com/join/shared_invite/MjM1NjEyODgxODkzLTE1MDQzNjgwMTUtYjI4YTdlM2VmMQ)
+and getting in touch with the developers on the [CakeML slack](https://cakeml.slack.com/join/shared_invite/MjM1NjEyODgxODkzLTE1MDQzNjgwMTUtYjI4YTdlM2VmMQ)
 .
 
 ---
