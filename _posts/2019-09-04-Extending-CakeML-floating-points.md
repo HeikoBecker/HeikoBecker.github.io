@@ -75,7 +75,7 @@ Proof-producing means that the tool produces an additional correctness theorem
 that the produced CakeML source code and theorem prover object have the same
 semantics.
 
-To boostrap the compiler, the CakeML standard library is also implement with
+To boostrap the compiler, the CakeML standard library is also implemented with
 the proof-producing translator.
 This in turn meant I had to make the translator aware of double floating-point
 arithmetic, implementing machinery to destruct HOL4 floating-point functions
@@ -88,7 +88,7 @@ extension of the translator was easy to do and relatively frictionless.
 This is where it became interesting: To make CakeML floating-points more
 interesting for other tools (blatant self promotion: *Icing*[^4]) I added
 support for the fused-multiply-add (FMA) instruction.
-In general, FMA's are (locally) more accurate than computing a plain
+In general, FMA's are (locally) more accurate then computing a plain
 multiplicaiton and addition.
 
 For CakeML AST's, FMA instructions were not supported before I started my work,
