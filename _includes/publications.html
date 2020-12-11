@@ -42,7 +42,7 @@
         <span class="card-title grey-text text-darken-4">Abstract
           <i class="material-icons right">close</i></span>
         <p>
-          {{publication.abstract}}
+          {{publication.abstract | markdownify }}
         </p>
       </div>
       {% endif %}

@@ -1,9 +1,19 @@
+- authors: Heiko Becker, Nathaniel Bos, Ivan Gavran, Eva Darulova, and Rupak Majumdar
+  title: "Lassie: HOL4 Tactics by Example (Under publication)"
+  conference: International Conference on Certified Programs and Proofs (CPP)
+  year: 2021
+  link: https://cloud.mpi-sws.org/index.php/s/XKy3Aa2BPNPXyiW
+  abstract: "Proof engineering efforts using interactive theorem proving have yielded several impressive projects in software systems and mathematics. A key obstacle to such efforts is the requirement that the domain expert is also an expert in the low-level details in constructing the proof in a theorem prover. In particular, the user needs to select a sequence of tactics that lead to a successful proof, a task that in general requires knowledge of the exact names of a large set of tactics.
+
+
+We present Lassie, a tactic framework for the HOL4 theorem prover that allows individual users to define their own tactic language **by example**, and for instance give frequently used tactics or tactic combinations easier-to-remember names. The core of Lassie is an extensible semantic parser, which allows the user to interactively extend the tactic language through a process of definitional generalization. Defining tactics in Lassie thus does not require any knowledge in implementing custom tactics, while proofs written in Lassie retain the correctness guarantees provided by the HOL4 system. We show through case studies how Lassie can be used in small and larger proofs by novice and more experienced interactive theorem prover users, and how we envision it to ease the learning curve in a HOL4 tutorial."
+
 - authors: Joachim Bard, Heiko Becker, and Eva Darulova
   title: Formally Verified Roundoff Errors using SMT-based Certificates and Subdivisions (Tool Paper)
   conference: International Symposium on Formal Methods (FM)
   year: 2019
-  link: https://calendar.mpi-sws.org/index.php/s/rCBQzzS4dqBwE2r
-  slides: https://calendar.mpi-sws.org/index.php/s/dCpeJ4DfGyobCAB
+  link: https://cloud.mpi-sws.org/index.php/s/rCBQzzS4dqBwE2r
+  slides: https://cloud.mpi-sws.org/index.php/s/dCpeJ4DfGyobCAB
   video: https://youtu.be/5vZpEXVJUJg?t=1459
   abstract: When compared to idealized, real-valued arithmetic, finite precision arithmetic introduces unavoidable errors, for which numerous tools compute sound upper bounds. To ensure soundness, providing formal guarantees on these complex tools is highly valuable. In this paper we extend one such formally verified tool, FloVer. First, we extend FloVer with an SMT-based domain using results from an external SMT solver as an oracle. Second, we implement interval subdivision on top of the existing analyses. Our evaluation shows that these extensions allow FloVer to efficiently certify more precise bounds for nonlinear expressions.
 
@@ -11,8 +21,8 @@
   title: Icing - Supporting Fast-math Style Optimizations in a Verified Compiler
   conference: International Conference on Computer-Aided Verification (CAV)
   year: 2019
-  link: https://calendar.mpi-sws.org/index.php/s/k7ANbNNXEjZPjed
-  slides: https://calendar.mpi-sws.org/index.php/s/4MjMnrp42azFHeq
+  link: https://cloud.mpi-sws.org/index.php/s/k7ANbNNXEjZPjed
+  slides: https://cloud.mpi-sws.org/index.php/s/4MjMnrp42azFHeq
   abstract: Verified compilers like CompCert and CakeML offer increasingly sophisticated optimizations. However, their deterministic source semantics and strict IEEE 754 compliance prevent the verification of "fast-math" style floating-point optimizations. Developers often selectively use these optimizations in mainstream compilers like GCC and LLVM to improve the performance of computations over noisy inputs or for heuristics by allowing the compiler to perform intuitive but IEEE 754-unsound rewrites. We designed, formalized, implemented, and verified a compiler for Icing, a new language which supports selectively applying fast-math style optimizations in a verified compiler. Icing's semantics provides the first formalization of fast-math in a verified compiler. We show how the Icing compiler can be connected to the existing verified CakeML compiler and verify the end-to-end translation by a sequence of refinement proofs from Icing to the translated CakeML. We evaluated Icing by incorporating several of GCC's fast-math rewrites. While Icing targets CakeML's source language, the techniques we developed are general and could also be incorporated in lower-level intermediate representations.
 
 - authors: Heiko Becker, Nikita Zyuzin, Raphael Monat, Eva Darulova, Magnus O. Myreen, and Anthony Fox
@@ -20,7 +30,7 @@
   conference: Formal Methods in Computer-Aided Design (FMCAD)
   year: 2018
   link: https://arxiv.org/abs/1707.02115
-  slides: https://calendar.mpi-sws.org/index.php/s/ZZML56aj994HLHo
+  slides: https://cloud.mpi-sws.org/index.php/s/ZZML56aj994HLHo
   abstract: Being able to soundly estimate roundoff errors in finite-precision computations is important for many applications in embedded systems and scientific computing. Due to the unintuitive nature of finite-precision arithmetic, automated static analysis tools are highly valuable for this task. The results, however, are only as correct as the implementations of the static analysis tools. This paper presents a formally verified and modular tool which fully automatically checks the correctness of finite-precision roundoff error bounds encoded in a certificate. We present implementations of certificate generation and checking for both Coq and HOL4 and evaluate it on a number of examples from the literature. The experiments use both in-logic evaluation of Coq and HOL4, and execution of extracted code outside of the logics. We benchmark Coq extracted unverified OCaml code and a CakeML-generated verified binary.
 
 - authors: Heiko Becker, Pavel Pancheckha, Eva Darulova, and Zachary Tatlock
@@ -28,7 +38,7 @@
   year: 2018
   link: https://arxiv.org/pdf/1805.02436
   conference: International Symposium on Formal Methods (FM)
-  slides: https://calendar.mpi-sws.org/index.php/s/rZof9Mp2iqc4B53
+  slides: https://cloud.mpi-sws.org/index.php/s/rZof9Mp2iqc4B53
   abstract: Recent renewed interest in optimizing and analyzing floating-point programs has lead to a diverse array of new tools for numerical programs. These tools are often complementary, each focusing on a distinct aspect of numerical programming. Building reliable floating point applications typically requires addressing several of these aspects, which makes easy composition essential. This paper describes the composition of two recent floating-point tools; Herbie, which performs accuracy optimization, and Daisy, which performs accuracy verification. We find that the combination provides numerous benefits to users, such as being able to use Daisy to check whether Herbie's unsound optimizations improved the worst-case roundoff error, as well as benefits to tool authors, including uncovering a number of bugs in both tools. The combination also allowed us to compare the different program rewriting techniques implemented by these tools for the first time. The paper lays out a road map for combining other floating-point tools and for surmounting common challenges.
 
 - authors: Eva Darulova, Anastasiia Izycheva, Fariha Nasir, Fabian Ritter, Heiko Becker, and Robert Bastian
