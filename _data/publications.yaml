@@ -4,7 +4,7 @@
   year: 2021
   link: https://cloud.mpi-sws.org/index.php/s/XKy3Aa2BPNPXyiW
   slides: https://cloud.mpi-sws.org/index.php/s/nYxWg7RZiZfTFxZ
-  video: https://youtu.be/W9ViapaRq0s
+  video: https://youtu.be/mAbvIzqet4w
   abstract: "Proof engineering efforts using interactive theorem proving have yielded several impressive projects in software systems and mathematics. A key obstacle to such efforts is the requirement that the domain expert is also an expert in the low-level details in constructing the proof in a theorem prover. In particular, the user needs to select a sequence of tactics that lead to a successful proof, a task that in general requires knowledge of the exact names of a large set of tactics.
 
 
