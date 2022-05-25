@@ -1,3 +1,11 @@
+- title: Dandelion
+  link: https://github.com/HeikoBecker/Dandelion/
+  description: A verified certificate checker for polynomial approximations of elementary functions
+
+- title: RealCake (integrated into CakeML)
+  link: https://github.com/CakeML/cakeml
+  description: A verified and optimizing compiler for floating-point arithmetic, implemented as an extension to CakeML
+
 - title: Icing
   link: https://gitlab.mpi-sws.org/AVA/Icing
   description: A new, nondeterministic floating-point source semantics and a proof-of-concept connection to the CakeML verified compiler.
